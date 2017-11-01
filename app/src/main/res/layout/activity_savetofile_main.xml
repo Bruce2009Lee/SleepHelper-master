@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.developerhaoz.sleephelper.test.ActivityTestSaveToFile">
+
+    <EditText
+        android:id="@+id/edit_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入要保存的文本"
+        android:textColor="#007dfa"
+        android:textColorHint="#898787"
+        android:textSize="21dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击保存文本"
+        android:textColor="#f56200"
+        android:textColorHint="#898787"
+        android:textSize="22dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_dataFromFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To be show"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

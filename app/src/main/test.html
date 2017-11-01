@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+    function jsAlert(){
+        var r = alert("I am alert");
+        alert(r);
+
+    }
+    function jsConFirm(){
+        var r = confirm("I am conFirm");
+        alert(r);
+
+    }
+    function jsPrompt(){
+        //第一个参数是提示
+        //第二个参数是默认值
+        var r = prompt("请输入姓名：","小明同学");
+        alert(r);
+
+    }
+    function jsJava(){
+        //调用java的方法，顶级对象，java方法
+        //可以直接访问JSTest，这是因为JSTest挂载到js的window对象下了
+        JSTest.showToast("我是被JS执行的Android代码");
+    }
+  </script>
+ </head>
+ <body>
+
+<input type="button" value="jsAlert" onclick="jsAlert()"/>
+<input type="button" value="jsConFirm" onclick="jsConFirm()"/>
+<input type="button" value="jsPrompt" onclick="jsPrompt()"/>
+<input type="button" value="jsJava" onclick="jsJava()"/>
+
+ </body>
+</html>
